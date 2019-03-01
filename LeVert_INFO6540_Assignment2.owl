@@ -1,0 +1,2283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#"
+     xml:base="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2">
+        <rdfs:comment>A Motorcycle ontology that considers the types, brands, functions and features of motorcycles</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/Definition"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/Description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/Description">
+        <rdfs:comment>This ontology contains a sampling of 2019 motorcycle models from several brand manufacturers.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasSynonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website">
+        <Website>https://www.yamaha-motor.ca</Website>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#license -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#license">
+        <license>The license for this ontology is Creative Commons (CC BY-SA). The work can be shared openly and modifications must adhere to the same license.</license>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:Description>Each 2019 motorcycle model identified in this ontology is manufactured in particular colourways or primary colour choices (eg. red, black, tan etc.).  the website for each model identifies the colours available for the 2019 model in question and so these colours have been attributed (with an &quot;or&quot; relationship) to each model.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasMotorSizeCCRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasMotorSizeCCRange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasMotorSizeCCRange"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:Description>Motorcycle engine size / capacity is defined by the number of &quot;cc&apos;s&quot; (cubic centimeters) in the cylinders and is the most common and prevalent way of referring to a motorcycle&apos;s engine capacity.
+
+Each motorcycle model has a specific number of cc&apos;s, and general ranges have been defined to capture groups of motorcycles using this identifying feature.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <dc:Description>Motorcycle &quot;type&quot; or style is how the manufacturer identifies and categorizes each model of motorcycle it produces.  While there may be variances or inconsistencies in how manufacturers define these types, this ontology simply &quot;tags&quot; each model with the manufacturer&apos;s own type definition as found on the manufacturer / model website.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsColourOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsColourOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:Description>Each 2019 motorcycle model identified in this ontology is manufactured in particular colourways or primary colour choices (eg. red, black, tan etc.).  the website for each model identifies the colours available for the 2019 model in question and so these colours have been attributed (with an &quot;or&quot; relationship) to each model.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <dc:Description>This ontology offers a sampling of 2019 motorcycle models from four manufacturers: Yamaha, Honda, Ducati and Kawasaki.  Each model is associated with its manufacturer.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <dc:Description>This ontology offers a sampling of 2019 motorcycle models from four manufacturers: Yamaha, Honda, Ducati and Kawasaki.  Each model is associated with its manufacturer.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:Description>Motorcycle engine size / capacity is defined by the number of &quot;cc&apos;s&quot; (cubic centimeters) in the cylinders and is the most common and prevalent way of referring to a motorcycle&apos;s engine capacity.
+
+Each motorcycle model has a specific number of cc&apos;s, and general ranges have been defined to capture groups of motorcycles using this identifying feature.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <dc:Description>Motorcycle &quot;type&quot; or style is how the manufacturer identifies and categorizes each model of motorcycle it produces.  While there may be variances or inconsistencies in how manufacturers define these types, this ontology simply &quot;tags&quot; each model with the manufacturer&apos;s own type definition as found on the manufacturer / model website.</dc:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+        <dc:Definition>951cc-2000cc</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://idratherberiding.com/2015/03/09/what-is-an-adventure-motorcycle/</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://idratherberiding.com/2015/03/09/what-is-an-adventure-motorcycle/</owl:annotatedTarget>
+        <rdfs:comment>Adventure motorcycles are generally designed for longer-distance travel off of the main road, including off-road and rugged terrain, with knobby tires, larger gas tanks and provision for luggage or panniers.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>BlackColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>BlueColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://www.motorcyclecruiser.com/what-is-cruiser</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.motorcyclecruiser.com/what-is-cruiser</owl:annotatedTarget>
+        <rdfs:comment>Cruiser motorcycles are designed for distance travel, tend to be quite low to the ground and comfortable to ride. They can often carry a passenger and can be equipped with panniers or luggage racks.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>http://www.soundrider.com/archive/tips/buying_a_dual_sport.aspx
+
+http://motorsportrider.net/content/mc/newrider/DualSport.aspx</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>http://www.soundrider.com/archive/tips/buying_a_dual_sport.aspx
+
+http://motorsportrider.net/content/mc/newrider/DualSport.aspx</owl:annotatedTarget>
+        <rdfs:comment>Dual sport motorcycles bridge &quot;road riding&quot; and &quot;off road&quot; riding, offering a generally nimble bike that can be taken on trails and rugged terrain yet can also be ridden (and licensed for) street and distance riding.  They are generally distinguished from &quot;off road&quot; or &quot;dirt&quot; bikes which cannot be licensed for riding on roads or highways.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <Website>https://www.ducati.com/ca/en/home</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/home</owl:annotatedTarget>
+        <rdfs:comment>Italian motorcycle company founded in 1926</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiHypermotard950 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiHypermotard950">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/hypermotard/hypermotard-950</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiHypermotard950"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/hypermotard/hypermotard-950</owl:annotatedTarget>
+        <rdfs:comment>Ducati 937cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster1200 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster1200">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/monster/monster-1200</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster1200"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/monster/monster-1200</owl:annotatedTarget>
+        <rdfs:comment>Ducati 1198cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster821Stealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster821Stealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YellowColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/gb/en/bikes/monster/monster-821</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster821Stealth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/gb/en/bikes/monster/monster-821</owl:annotatedTarget>
+        <rdfs:comment>Ducati 821cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada1260PikesPeak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada1260PikesPeak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ww/en/bikes/multistrada/multistrada-1260-pikes-peak</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada1260PikesPeak"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ww/en/bikes/multistrada/multistrada-1260-pikes-peak</owl:annotatedTarget>
+        <rdfs:comment>Ducati 1262cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada950S -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada950S">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/multistrada/multistrada-950</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada950S"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/multistrada/multistrada-950</owl:annotatedTarget>
+        <rdfs:comment>Ducati 937cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiPanigaleV4R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiPanigaleV4R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/panigale/panigale-v4-r</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiPanigaleV4R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/panigale/panigale-v4-r</owl:annotatedTarget>
+        <rdfs:comment>Ducati 998cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiSupersport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiSupersport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/supersport/supersport</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiSupersport"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/supersport/supersport</owl:annotatedTarget>
+        <rdfs:comment>Ducati 937cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiXDiavel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiXDiavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.ducati.com/ca/en/bikes/xdiavel/xdiavel</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiXDiavel"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.ducati.com/ca/en/bikes/xdiavel/xdiavel</owl:annotatedTarget>
+        <rdfs:comment>Ducati 1262cc cruiser bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>GrayColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GreenColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GreenColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>GreenColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaAfricaTwin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaAfricaTwin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/adventure/africatwin</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaAfricaTwin"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/adventure/africatwin</owl:annotatedTarget>
+        <rdfs:comment>Honda 998cc adventure bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB300F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB300F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/naked/cb300fa</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB300F"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/naked/cb300fa</owl:annotatedTarget>
+        <rdfs:comment>Honda 286cc naked bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB500X -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB500X">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/adventure/cb500x</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB500X"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/adventure/cb500x</owl:annotatedTarget>
+        <rdfs:comment>Honda 471cc adventure bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB650R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB650R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/naked/cb650r</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB650R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/naked/cb650r</owl:annotatedTarget>
+        <rdfs:comment>Honda 649cc naked bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/naked/cb1000r</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/naked/cb1000r</owl:annotatedTarget>
+        <rdfs:comment>Honda 998cc naked bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000RR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000RR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/sport/cbr1000rra</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000RR"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/sport/cbr1000rra</owl:annotatedTarget>
+        <rdfs:comment>Honda 999cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR500R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR500R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/sport/cbr500r</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR500R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/sport/cbr500r</owl:annotatedTarget>
+        <rdfs:comment>Honda 471cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF125F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF125F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/dirtbikes/trail/crf125f</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF125F"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/dirtbikes/trail/crf125f</owl:annotatedTarget>
+        <rdfs:comment>Honda 125cc dirt bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF230F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF230F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/dirtbikes/trail/crf230f</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF230F"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/dirtbikes/trail/crf230f</owl:annotatedTarget>
+        <rdfs:comment>Honda 223cc dirt bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <Website>https://motorcycle.honda.ca</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca</owl:annotatedTarget>
+        <rdfs:comment>Japanese manufacturer of automobiles and motorcycles as well as other motorsports and equipment.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGL1800BK_GoldWing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGL1800BK_GoldWing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/touring/gold_wing</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGL1800BK_GoldWing"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/touring/gold_wing</owl:annotatedTarget>
+        <rdfs:comment>Honda 1833cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGrom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGrom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OrangeColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/naked/Grom/2019</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGrom"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/naked/Grom/2019</owl:annotatedTarget>
+        <rdfs:comment>Honda 125cc naked bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaNC750X -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaNC750X">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Adventure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/adventure/nc750xa</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaNC750X"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/adventure/nc750xa</owl:annotatedTarget>
+        <rdfs:comment>Honda 745cc adventure bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel300 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel300">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/cruiser/rebel_300</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel300"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/cruiser/rebel_300</owl:annotatedTarget>
+        <rdfs:comment>Honda 286cc cruiser bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel500 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel500">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Cruiser"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://motorcycle.honda.ca/model/cruiser/rebel_500</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel500"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://motorcycle.honda.ca/model/cruiser/rebel_500</owl:annotatedTarget>
+        <rdfs:comment>Honda 471cc cruiser bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <Website>https://kawasaki.ca
+https://www.kawasaki.com/About/KawasakiCompanies</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca
+https://www.kawasaki.com/About/KawasakiCompanies</owl:annotatedTarget>
+        <rdfs:comment>Japanese manufacturer of motorcycles, engines, robotics equipment etc. Founded in 1896</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://kawasaki.ca/product/ninja-h2-r</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca/product/ninja-h2-r</owl:annotatedTarget>
+        <rdfs:comment>Kawasaki 998cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2SX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2SX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://kawasaki.ca/product/ninja-h2-sx-</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2SX"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca/product/ninja-h2-sx-</owl:annotatedTarget>
+        <rdfs:comment>Kawasaki 998cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-10R_ABS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-10R_ABS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://kawasaki.ca/product/ninja-zx-10r-abs</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-10R_ABS"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca/product/ninja-zx-10r-abs</owl:annotatedTarget>
+        <rdfs:comment>Kawasaki 998cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-6R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-6R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#LimeGreenColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://kawasaki.ca/product/ninja-zx-6r-kawasaki-racing-team-edition</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-6R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca/product/ninja-zx-6r-kawasaki-racing-team-edition</owl:annotatedTarget>
+        <rdfs:comment>Kawasaki 636cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiW800Cafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiW800Cafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#SilverColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://kawasaki.ca/product/w800-cafe</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiW800Cafe"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://kawasaki.ca/product/w800-cafe</owl:annotatedTarget>
+        <rdfs:comment>Kawasaki 773cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#LimeGreenColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#LimeGreenColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>LimeGreenColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC">
+        <dc:Definition>MotorSizeRangecc</dc:Definition>
+        <Website>http://bikesareforgirls.com/2010/11/do-ccs-matter-beginner-motorcycle/</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/Definition"/>
+        <owl:annotatedTarget>MotorSizeRangecc</owl:annotatedTarget>
+        <rdfs:comment>CCs refer to the engine displacement or capacity (eg. how much space in side the cylinders) - usually measured in &quot;cubic centimeters&quot;, hence &quot;cc&apos;s&quot; - on cars this is measured in litres (eg a 4,6, 8 litre or cylinder engine).</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies">
+        <dc:Definition>MotorcycleBrandCompanies</dc:Definition>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/Definition"/>
+        <owl:annotatedTarget>MotorcycleBrandCompanies</owl:annotatedTarget>
+        <rdfs:comment>This class contains companies that manufacture motorcycles reflected in the Motorcycle Models</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours">
+        <dc:Definition>MotorcycleColours</dc:Definition>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/Definition"/>
+        <owl:annotatedTarget>MotorcycleColours</owl:annotatedTarget>
+        <rdfs:comment>Colours in which the motorcycles in this ontology are available</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels">
+        <dc:Definition>MotorcycleModels</dc:Definition>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/Definition"/>
+        <owl:annotatedTarget>MotorcycleModels</owl:annotatedTarget>
+        <rdfs:comment>Motorcycle Model names as defined by manufacturer</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes">
+        <dc:Definition>MotorcycleTypes</dc:Definition>
+        <Website>https://www.thoughtco.com/types-of-motorcycles-2399743
+
+https://blog.nationwide.com/types-of-motorcycles/
+
+https://www.themanual.com/auto/what-kind-of-motorcycle-should-i-get-motorcycle-types/
+
+https://www.americanmotorcyclist.com/Story/six-types-of-motorcycles-for-new-riders
+
+https://en.wikipedia.org/wiki/Types_of_motorcycles</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/Definition"/>
+        <owl:annotatedTarget>MotorcycleTypes</owl:annotatedTarget>
+        <rdfs:comment>Motorcycle types by primary function as determined by manufacturer</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.thoughtco.com/types-of-motorcycles-2399743
+
+https://blog.nationwide.com/types-of-motorcycles/
+
+https://www.themanual.com/auto/what-kind-of-motorcycle-should-i-get-motorcycle-types/
+
+https://www.americanmotorcyclist.com/Story/six-types-of-motorcycles-for-new-riders
+
+https://en.wikipedia.org/wiki/Types_of_motorcycles</owl:annotatedTarget>
+        <rdfs:comment>Motorcycle &quot;types&quot; are not entirely standardized among manufacturers, brands, or models, though there are general categories that are used most frequently and are listed here.  This lack of consistency makes it challenging to precisely define motorcycle types so I have relied on the manufacturer&apos;s own label even if features of the same type are not entirely uniform across manufacturers.  For instance, a &quot;naked&quot; bike may also be called a &quot;street&quot; bike, but this is not an absolutely synonymous relationship; on the other hand, a &quot;dirt bike&quot; is generally considered synonymous with an &quot;off road&quot; bike.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://www.rideapart.com/articles/255878/5-reasons-you-should-ride-a-naked-bike/</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Naked"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.rideapart.com/articles/255878/5-reasons-you-should-ride-a-naked-bike/</owl:annotatedTarget>
+        <rdfs:comment>Naked motorcycles (a relatively new trend) represent a wide range of standard or street bikes that have been stripped of their &quot;bling&quot; or added features such as fairings (shells that cover engines, wheels etc.) and present a more stark look than many bikes.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <HasSynonym>Dirt</HasSynonym>
+        <Website>https://adventure.howstuffworks.com/outdoor-activities/off-roading/how-dangerous-is-off-roading.htm 
+
+http://bma1.ca/bikes-c2.php</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://adventure.howstuffworks.com/outdoor-activities/off-roading/how-dangerous-is-off-roading.htm 
+
+http://bma1.ca/bikes-c2.php</owl:annotatedTarget>
+        <rdfs:comment>Off road or Dirt bikes generally covers a motorcycle type that is light, nimble, and designed with knobby tires to be ridden on trails or off the beaten track.  One might wonder what the point is but I&apos;m told it is great fun (and am currently in the market for a dirt bike or dual sport bike!).  Off Road / Dirt bikes generally cannot be licensed to be ridden on streets or highways because they lack some of the mandated safety equipment required such as a headlight, turn signals, tail lights, brake lights etc. So they are not considered &quot;street legal&quot;.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OrangeColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OrangeColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>OrangeColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>RedColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#SilverColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#SilverColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>SilverColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://newatlas.com/are-motorcycle-modifications-really-worth-all-the-effort/22014/
+
+https://www.motorcyclistonline.com/new-sport-bikes</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://newatlas.com/are-motorcycle-modifications-really-worth-all-the-effort/22014/
+
+https://www.motorcyclistonline.com/new-sport-bikes</owl:annotatedTarget>
+        <rdfs:comment>Sport motorcycles are built for speed, and are often conflated with race bikes or racing in general. However, the style of bike (and the posture when riding which tends to be hunched over the gas tank holding on for dear life) is also commonly used as a normal street bike and purchased by riders who simply prefer the style, posture and features of sport bikes.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Street -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Street">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://www.quora.com/What-is-the-difference-between-a-street-bike-and-a-superbike</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Street"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.quora.com/What-is-the-difference-between-a-street-bike-and-a-superbike</owl:annotatedTarget>
+        <rdfs:comment>Street bikes are difficult to define because they embrace all bikes and yet the term is also used to identify a standard type of bike that may not fit into one of the other niche groups (Dual sport, adventure, etc.).  Other than wikipedia it was difficult to even find a definition source, but many manufacturers use this term as a catch-all depending on their motorcycle lineup.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#TanColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#TanColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>TanColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleTypes"/>
+        <Website>https://www.totalmotorcycle.com/dictionary/T?d=1</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.totalmotorcycle.com/dictionary/T?d=1</owl:annotatedTarget>
+        <rdfs:comment>&quot;1. A Luxurious motorcycle with many comforts and amenities for long range travel. 2. A bike equipped for longer riders with fairings and saddle bags&quot;
+
+The Touring bike is identified by its comfort, is usually big (and heavy), and occasionally boasts features such as large engine displacement (cc) radios, heated seats, reverse and air conditioning (seriously... ). They are designed for long distance travel, often have luggage compartments or panniers, generally carry a passenger, and are quite cushy to ride!</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>WhiteColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleBrandCompanies"/>
+        <Website>https://www.yamaha-motor.ca
+https://www.yamaha.com/en/</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca
+https://www.yamaha.com/en/</owl:annotatedTarget>
+        <rdfs:comment>Japanese manufacturer of motorcycles, electronics, musical instruments, engines etc.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaStarVentureTC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaStarVentureTC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Touring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5225&amp;group=MC&amp;catId=1</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaStarVentureTC"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5225&amp;group=MC&amp;catId=1</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 1854cc touring bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTT-R230 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTT-R230">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5185&amp;group=MC&amp;catId=81</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTT-R230"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5185&amp;group=MC&amp;catId=81</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 223cc off-road (dirt) bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTW200E -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTW200E">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#TanColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5094&amp;group=MC&amp;catId=13</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTW200E"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5094&amp;group=MC&amp;catId=13</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 196cc dual sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaWR250R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaWR250R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5198&amp;group=MC&amp;catId=13</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaWR250R"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5198&amp;group=MC&amp;catId=13</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 250cc dual sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaXT250 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaXT250">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DualSport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#TanColours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5084&amp;group=MC&amp;catId=13</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaXT250"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5084&amp;group=MC&amp;catId=13</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 249cc dual sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZ250F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZ250F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OffRoad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5095&amp;group=MC&amp;catId=80</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZ250F"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5095&amp;group=MC&amp;catId=80</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 250cc Off-road (dirt) bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5207&amp;group=MC&amp;catId=79</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5207&amp;group=MC&amp;catId=79</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 998cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1M -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1M">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#SilverColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5206&amp;group=MC&amp;catId=79</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1M"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5206&amp;group=MC&amp;catId=79</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 998cc sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleModels"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsMotorSizeCCRangeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HasColourOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#IsManufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Website>https://www.yamaha-motor.ca/products/details-build-price.php?model=5209&amp;group=MC&amp;catId=79</Website>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R3"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#Website"/>
+        <owl:annotatedTarget>https://www.yamaha-motor.ca/products/details-build-price.php?model=5209&amp;group=MC&amp;catId=79</owl:annotatedTarget>
+        <rdfs:comment>Yamaha 321CC Sport bike</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YellowColours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YellowColours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorcycleColours"/>
+        <dc:Definition>YellowColours</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+        <dc:Definition>120cc-350cc</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+        <dc:Definition>351cc-650cc</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#MotorSizeRangeCC"/>
+        <dc:Definition>651cc-950cc</dc:Definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/951cc_2000cc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#120cc_350cc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#351cc_650cc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#651cc_950cc"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlackColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#BlueColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GrayColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#GreenColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#LimeGreenColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#OrangeColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#RedColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#SilverColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#TanColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#WhiteColours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YellowColours"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaCompany"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiHypermotard950"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster1200"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMonster821Stealth"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada1260PikesPeak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiMultiStrada950S"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiPanigaleV4R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiSupersport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#DucatiXDiavel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaAfricaTwin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB300F"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB500X"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCB650R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR1000RR"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCBR500R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF125F"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaCRF230F"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGL1800BK_GoldWing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaGrom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaNC750X"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel300"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#HondaRebel500"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaH2SX"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-10R_ABS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiNinjaZX-6R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#KawasakiW800Cafe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaStarVentureTC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTT-R230"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaTW200E"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaWR250R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaXT250"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZ250F"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R1M"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/laurellelevert2/ontologies/2019/1/MotorcyclesAssignment2#YamahaYZF-R3"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
